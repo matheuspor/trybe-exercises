@@ -1,1 +1,1 @@
-Estudante da Trybe
+ESTUDANTE DA TRYBE
