@@ -1,12 +1,22 @@
-h1, p {
-  text-align: center;
+div:hover {
+  border: solid black;
 }
-li {
-  list-style: none;
+div:nth-child(3) {
+  font-style: italic;
+  color: blue;
 }
-li:hover {
-  background-color:green;
+div:nth-child(4) {
+  color: red;
 }
-li:active {
-  color: white;
+div:nth-child(5) {
+  font-style: italic;
+  font-size: 20px;
+  color: orange;
+}
+div:nth-child(6) {
+  color: brown;
+}
+div:nth-child(7) {
+  font-style: italic;
+  color: green;
 }
