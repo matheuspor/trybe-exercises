@@ -1,0 +1,16 @@
+#fatos, aside {    
+  display: inline-block;
+}
+
+#fatos {
+  width: 300px;    
+    border: solid black;   
+    float: left;
+}
+
+aside { 
+  margin-left: 100px;  
+  width: 300px;  
+  text-align: center;
+  border: solid black;
+  }
