@@ -105,7 +105,20 @@ let first = 7;
 let second = 5;
 let third = 3;
 
-if (first % 2 === 0 || second % 2 === 0 || third % 2 == 0) {
+if (first % 2 === 0 || second % 2 === 0 || third % 2 === 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+// 
+
+// Exercício 9
+
+let one = 2;
+let two = 3;
+let three = 6;
+
+if (one % 2 != 0 || two % 2 != 0 || three % 2 != 0) {
   console.log(true);
 } else {
   console.log(false);
