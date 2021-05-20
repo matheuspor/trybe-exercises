@@ -123,3 +123,43 @@ if (one % 2 != 0 || two % 2 != 0 || three % 2 != 0) {
 } else {
   console.log(false);
 }
+//
+
+// Exercício 10
+
+let custo = 500;
+let venda = 1000;
+let custoTotal = custo * 1.2;
+
+if (custo > 0 && venda > 0) {
+  let lucro = (venda - custoTotal) * 1000;
+  console.log(lucro);
+}
+//
+
+// Exercício 11
+
+let salario = 1500;
+let salarioLiq;
+let aliq;
+
+if (salario <= 1556.94) {
+  salarioLiq = salario - (salario * 0.08);
+} else if (salario >= 1556.95 && salario <= 2594.92) {
+  salarioLiq = salario - (salario * 0.09);
+} else if (salario >= 2594.93 && salario <= 5189.82) {
+  salarioLiq = salario - (salario * 0.11);
+} else if (salario > 5189.82) {
+  salarioLiq = salario - 570.88;
+}
+
+if (salarioLiq >= 1903.99 && salarioLiq <= 2826.65) {
+  salarioLiq -= (salarioLiq * 0.075) - 142.80;
+} else if (salarioLiq >= 2826.66 && salarioLiq <= 3751.05) {
+  salarioLiq -= (salarioLiq * 0.15) - 354.80;
+} else if (salarioLiq >= 3751.06 && salarioLiq <= 4664.68) {
+  salarioLiq -= (salarioLiq * 0.225) - 636.13;
+} else if (salarioLiq > 4664.68) {
+  salarioLiq -= (salarioLiq * 0.275) - 869.39;
+}
+console.log(salarioLiq)
