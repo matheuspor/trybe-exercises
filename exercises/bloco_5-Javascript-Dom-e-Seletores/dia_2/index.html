@@ -64,16 +64,24 @@
     document.body.appendChild(h1);
 
     let divMain = document.createElement('div');
-    divMain.classList = 'main-content';
+    divMain.className = 'main-content';
     document.body.appendChild(divMain);
 
     let divCenter = document.createElement('div');
-    divCenter.classList = 'center-content';
+    divCenter.className = 'center-content';
     divMain.appendChild(divCenter);
 
     let paragraph = document.createElement('p');
     paragraph.innerText = 'Texto';
     divCenter.appendChild(paragraph);
+
+    let divLeft = document.createElement('div');
+    divLeft.className = 'left-content';
+    divMain.appendChild(divLeft);
+
+    let divRight = document.createElement('div');
+    divLeft.className = 'right-content';
+    divMain.appendChild(divRight);
 
   </script>
 </body>
