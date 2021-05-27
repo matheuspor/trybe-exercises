@@ -59,9 +59,13 @@
 
 <body>
   <script>
-    let body = document.querySelector('body');
     let h1 = document.createElement('h1');
-    body.appendChild(h1).innerText = 'Exercício 5.2 - JavaScript DOM';
+    h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+    document.body.appendChild(h1);
+
+    let divMain = document.createElement('div');
+    divMain.classList = '.main-content';
+    document.body.appendChild(divMain);
 
   </script>
 </body>
