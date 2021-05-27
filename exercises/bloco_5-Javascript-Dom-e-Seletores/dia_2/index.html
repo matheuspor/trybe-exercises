@@ -64,8 +64,16 @@
     document.body.appendChild(h1);
 
     let divMain = document.createElement('div');
-    divMain.classList = '.main-content';
+    divMain.classList = 'main-content';
     document.body.appendChild(divMain);
+
+    let divCenter = document.createElement('div');
+    divCenter.classList = 'center-content';
+    divMain.appendChild(divCenter);
+
+    let paragraph = document.createElement('p');
+    paragraph.innerText = 'Texto';
+    divCenter.appendChild(paragraph);
 
   </script>
 </body>
