@@ -88,6 +88,18 @@
     img.className = 'small-image';
     divLeft.appendChild(img);
 
+    // Exercício 8
+    let lista = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+    let unorderedList = document.createElement('ul');
+    divRight.appendChild(unorderedList);
+
+    for (let index in lista) {
+      let listList = document.createElement('li');
+      listList.innerHTML = lista[index];
+      unorderedList.appendChild(listList);
+    }
+    div.divRight.appendChild(unorderedList);
+
   </script>
 </body>
 
