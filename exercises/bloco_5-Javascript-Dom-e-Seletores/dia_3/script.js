@@ -18,9 +18,16 @@ function createDaysOfTheMonth() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
 
   for (let key of dezDaysList) {
-    let createday = document.createElement('li');
-    createday.innerText = key;
-    listDays.appendChild(createday);
+    let createDay = document.createElement('li');
+    createDay.innerText = key;
+    createDay.className = 'day';
+    listDays.appendChild(createDay);
+    if (key === 24 || key === 25 || key === 31) {
+      createDay.className += ' holiday';
+    }
+    if (key === 4 || key === 11 || key === 18 || key === 25) {
+      createDay.className += ' friday';
+    }
   }
 }
 
