@@ -98,7 +98,13 @@
       listList.innerHTML = lista[index];
       unorderedList.appendChild(listList);
     }
-    div.divRight.appendChild(unorderedList);
+
+    // Exercício 9
+    for (let index = 0; index < 3; index += 1) {
+      let h3 = document.createElement('h3');
+      h3.innerText = '3 tags';
+      divMain.appendChild(h3);
+    }
 
   </script>
 </body>
