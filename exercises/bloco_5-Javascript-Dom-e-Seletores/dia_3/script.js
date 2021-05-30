@@ -116,3 +116,14 @@ function addCaps(cor) {
 }
 
 addCaps('red');
+
+function addClass() {
+  let divColor = document.querySelector('.task');
+  divColor.addEventListener('click', function () {
+    if (divColor.className === 'task-selected') {
+      divColor.className = 'task';
+    } else divColor.className = 'task-selected';
+  })
+}
+
+addClass();
