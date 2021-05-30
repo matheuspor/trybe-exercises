@@ -98,7 +98,7 @@ function remZoom() {
 addZoom();
 remZoom();
 
-function addTask (task) {
+function addTask(task) {
   let span = document.createElement('span');
   span.innerText = task;
   let div = document.querySelector('.my-tasks');
@@ -106,3 +106,13 @@ function addTask (task) {
 }
 
 addTask('Cozinhar');
+
+function addCaps(cor) {
+  let newDiv = document.createElement('div');
+  newDiv.className = 'task';
+  newDiv.style.backgroundColor = cor;
+  let div = document.querySelector('.my-tasks');
+  div.appendChild(newDiv);
+}
+
+addCaps('red');
