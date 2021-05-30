@@ -33,7 +33,7 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
-function createButton(buttonName) {
+function createButtonFeriado(buttonName) {
   let button = document.createElement('button');
   button.innerText = buttonName
   button.id = 'btn-holiday';
@@ -41,7 +41,7 @@ function createButton(buttonName) {
   divCointainer.appendChild(button);
 }
 
-createButton('Feriados');
+createButtonFeriado('Feriados');
 
 function clickButton() {
   let holidays = document.querySelectorAll('.holiday');
@@ -55,3 +55,13 @@ function clickButton() {
 
 let button = document.querySelector('#btn-holiday');
 button.addEventListener('click', clickButton)
+
+function createButtonFriday(buttonName) {
+  let button = document.createElement('button');
+  button.innerText = buttonName
+  button.id = 'btn-friday';
+  let divCointainer = document.querySelector('.buttons-container');
+  divCointainer.appendChild(button);
+}
+
+createButtonFriday('Sexta-feira');
