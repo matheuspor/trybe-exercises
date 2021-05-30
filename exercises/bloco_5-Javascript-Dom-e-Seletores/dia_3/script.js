@@ -97,3 +97,12 @@ function remZoom() {
 
 addZoom();
 remZoom();
+
+function addTask (task) {
+  let span = document.createElement('span');
+  span.innerText = task;
+  let div = document.querySelector('.my-tasks');
+  div.appendChild(span);
+}
+
+addTask('Cozinhar');
