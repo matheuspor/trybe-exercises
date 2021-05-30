@@ -80,3 +80,20 @@ function clickButtonFriday() {
 };
 
 clickButtonFriday();
+
+function addZoom() {
+  let day = document.querySelector('#days');
+  day.addEventListener('mouseover', function () {
+    event.target.style.fontSize = '30px';
+  })
+}
+
+function remZoom() {
+  let day = document.querySelector('#days');
+  day.addEventListener('mouseout', function () {
+    event.target.style.fontSize = '20px';
+  })
+}
+
+addZoom();
+remZoom();
