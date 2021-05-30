@@ -33,15 +33,15 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
-function createButton() {
+function createButton(buttonName) {
   let button = document.createElement('button');
-  button.innerText = 'Feriados'
+  button.innerText = buttonName
   button.id = 'btn-holiday';
   let divCointainer = document.querySelector('.buttons-container');
   divCointainer.appendChild(button);
 }
 
-createButton();
+createButton('Feriados');
 
 function clickButton() {
   let holidays = document.querySelectorAll('.holiday');
