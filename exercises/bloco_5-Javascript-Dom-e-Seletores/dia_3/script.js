@@ -127,3 +127,16 @@ function addClass() {
 }
 
 addClass();
+
+function clickDay() {
+  let days = document.querySelector('#days');
+  days.addEventListener('click', function () {
+    let taskSelected = document.querySelector('.task-selected');
+    if (event.target.style.color === taskSelected.style.backgroundColor) {
+      event.target.style.color = 'rgb(119,119,119)'
+    }
+    else event.target.style.color = taskSelected.style.backgroundColor;
+  })
+}
+
+clickDay();
