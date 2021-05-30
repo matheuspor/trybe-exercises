@@ -42,3 +42,16 @@ function createButton() {
 }
 
 createButton();
+
+function clickButton() {
+  let holidays = document.querySelectorAll('.holiday');
+  for (let index of holidays) {
+    if (index.style.backgroundColor === 'red') {
+      index.style.backgroundColor = 'rgb(238,238,238';
+    }
+    else index.style.backgroundColor = 'red';
+  }
+}
+
+let button = document.querySelector('#btn-holiday');
+button.addEventListener('click', clickButton)
