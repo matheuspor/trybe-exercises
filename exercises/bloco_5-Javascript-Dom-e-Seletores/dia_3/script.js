@@ -43,7 +43,7 @@ function createButtonFeriado(buttonName) {
 
 createButtonFeriado('Feriados');
 
-function clickButton() {
+function clickButtonHoliday() {
   let holidays = document.querySelectorAll('.holiday');
   for (let index of holidays) {
     if (index.style.backgroundColor === 'red') {
@@ -54,7 +54,7 @@ function clickButton() {
 }
 
 let button = document.querySelector('#btn-holiday');
-button.addEventListener('click', clickButton)
+button.addEventListener('click', clickButtonHoliday);
 
 function createButtonFriday(buttonName) {
   let button = document.createElement('button');
@@ -65,3 +65,18 @@ function createButtonFriday(buttonName) {
 }
 
 createButtonFriday('Sexta-feira');
+
+function clickButtonFriday() {
+  let fridays = [4, 11, 18, 25];
+  let buttonFriday = document.querySelector('#btn-friday');
+  buttonFriday.addEventListener('click', function () {
+    let friday = document.querySelectorAll('.friday');
+    for (let index in friday) {
+      if (friday[index].innerText === 'SEXTOU!') {
+        friday[index].innerText = fridays[index];
+      } else friday[index].innerText = 'SEXTOU!';
+    }
+  })
+};
+
+clickButtonFriday();
