@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Currículo</title>
+</head>
+
+<body>
+  <h1>Currículo </h1>
+  <form action="" method="get" enctype="multipart/form-data">
+    <div id="personal-data">
+      <fieldset>
+        <label for="name-text">Nome:</label>
+        <input type="text" name="name-text" id="name-text" maxlength="40" required>
+        <label for="email-text">Email:</label>
+        <input type="email" name="email-text" id="email-text" maxlength="50" required>
+        <label for="cpf-text">CPF:</label>
+        <input type="text" name="" id="cpf-text" maxlength="11" required>
+        <label for="endereco-text">Endereço:</label>
+        <input type="text" name="endereco-text" id="endereco-text" maxlength="200" required>
+        <label for="cidade-text">Cidade:</label>
+        <input type="text" name="cidade-text" id="cidade-text" maxlength="28" required>
+        <label for="estado-select">Estado:</label>
+        <select name="estado-select" id="estado-select"></select>
+        <label for="complemento-text">Complemento:</label>
+        Casa<input type="radio" name="complemento-text" id="complemento-text">
+        Apartamento<input type="radio" name="complemento-text" id="complemento-text">
+
+      </fieldset>
+    </div>
+
+    <button>Aperte</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
