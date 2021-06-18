@@ -1,3 +1,12 @@
-const factorial = num => num > 1 ? num * factorial(num - 1) : 1;
+const biggestWord = sentence => {
+  const splitWords = sentence.split(' ');
+  let bigWord = '';
+  for (index of splitWords) {
+    if (index.length > bigWord.length) {
+      bigWord = index
+    }
+  }
+  return bigWord;
+}
 
-console.log(factorial(3));
+console.log(biggestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
