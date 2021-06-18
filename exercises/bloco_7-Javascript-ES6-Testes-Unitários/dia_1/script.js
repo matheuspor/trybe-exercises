@@ -1,12 +1,4 @@
-const biggestWord = sentence => {
-  const splitWords = sentence.split(' ');
-  let bigWord = '';
-  for (index of splitWords) {
-    if (index.length > bigWord.length) {
-      bigWord = index
-    }
-  }
-  return bigWord;
-}
+let count = 0
+let counter = document.querySelector('#counter');
 
-console.log(biggestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
+document.querySelector('#clickbtn').addEventListener('click', () => counter.innerHTML = count += 1);
