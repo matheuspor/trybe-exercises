@@ -1,4 +1,8 @@
-let count = 0
-let counter = document.querySelector('#counter');
-
-document.querySelector('#clickbtn').addEventListener('click', () => counter.innerHTML = count += 1);
+const países = {
+  França: 'Paris',
+  Brasil: 'Brasília',
+  Espanha: 'Madrid',
+  Portugal: 'Lisboa',
+};
+const pairKeyValue = Object.entries(países);
+console.log(pairKeyValue);
