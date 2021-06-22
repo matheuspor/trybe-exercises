@@ -1,17 +1,15 @@
 const assert = require('assert');
+ const sumAllNumbers= (num) => {
+   let counter = 0;
+   for (let key of num) {
+     counter += key;
+   }
+   return counter;
+ }
 
-const wordLengths = (array) => {
-  let counter = [];
+const numbers = [9, 23, 10, 3, 8];
+const expected = 53;
+const output = sumAllNumbers(numbers);
 
-  for (let key of array) {
-    counter.push(key.length);
-  }
-  return counter;
-}
-
-const words = ['sun', 'potato', 'roundabout', 'pizza'];
-const expected = [3, 6, 10, 5];
-
-assert.strictEqual(typeof wordLengths, 'function');
-const output = wordLengths(words);
-assert.deepStrictEqual(output, expected);
+assert.strictEqual(typeof sumAllNumbers, 'function');
+assert.strictEqual(output, expected);
