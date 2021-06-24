@@ -1,25 +1,17 @@
-const assert = require('assert');
+const assert = require ('assert');
 
-const findTheNeedle = (array, string) => {
-  for (let key in array) {
-    if (array[key] === string) {
-      return Number(key);
-    } 
+const greetPeople = (people) => {
+  let greeting = [];
+
+  for (const person in people) {
+    greeting.push(people[person]);
   }
-  return -1;
-}
+  return greeting;
+};
 
-let words = ['house', 'train', 'slide', 'needle', 'book'];
-let expected = 3;
-let output = findTheNeedle(words, 'needle');
-assert.strictEqual(output, expected);
+const parameter = ['Irina', 'Ashleigh', 'Elsa'];
+const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
 
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = 0;
-output = findTheNeedle(words, 'plant');
-assert.strictEqual(output, expected);
+assert.deepStrictEqual(greetPeople(parameter), result);
 
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = -1;
-output = findTheNeedle(words, 'plat');
-assert.strictEqual(output, expected);
+console.log(typeof greetPeople());
