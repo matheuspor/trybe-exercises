@@ -7,3 +7,10 @@ test('If User find', () => {
       expect(user).toBe('Mark');
     })
 })
+
+test('If User not found', () => {
+  return getUserName(1)
+    .catch(error => {
+      expect(error).toEqual({ error: 'User with 1 not found.'});
+    })
+})
