@@ -4,16 +4,16 @@ const Animals = [
   { name: 'Preguiça', age: 5, type: 'Cat' },
 ];
 
-const findAnimalByName = (name) => (
+const findAnimalByAge = (age) => (
   new Promise ((resolve, reject) => {
-    const animal = Animals.find(animal => animal.name === name);
+    const animal = Animals.find(animal => animal.age === age);
     if (animal) return resolve(animal);
-    return reject ('Nenhum animal com esse nome!')
+    return reject ('Nenhum animal com essa idade!')
   })
 );
 
-const getAnimal = (name) => {
-  return findAnimalByName(name)
+const getAnimal = (age) => {
+  return findAnimalByAge(age)
   .then(list => list);
 };
 
