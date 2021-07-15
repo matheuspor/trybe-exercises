@@ -1,9 +1,9 @@
-const { test, expect } = require('@jest/globals');
-const uppercase = require('./script');
+const { expect } = require('@jest/globals');
+const getUserName = require('./script');
 
-test('capitalize string', () => {
-  
-  uppercase('string', (cb) => {
-    expect(cb).toBe('STRING');
-  });
+test('If User find', () => {
+  return getUserName(4)
+    .then(user => {
+      expect(user).toBe('Mark');
+    })
 })
